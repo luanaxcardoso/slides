@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Roboto:wght@400;700;900&display=swap');
+
+body{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    width: 100vw;
+    background-color: #f8f5f5;
+}
+
+.header{
+    height: 50px;
+    width: 100%;
+    background-color: #f5efef;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    box-shadow: 0 5px 15px rgba(100, 100, 100, 0.473);
+}
+
+.header h1{
+    font-size: 28px;
+    font-family: 'Dancing Script', cursive;
+    position: absolute;
+    align-items: center;
+    text-align: center;
+    font-weight: 600;
+    color: orangered;
+}
+
+.social {
+    position: absolute;
+    top: 10px; 
+    right: 16px; 
+    display: flex;
+    align-items: center;
+}
+
+.social > *:not(:last-child) {
+    margin-right: 6px; /* Ajustar o valor para controlar o tamanho do espaço entre os ícones */
+}
+
+
+.content{
+    height: 420px;
+    width:830px;
+    border-radius: 20px;
+    overflow: hidden; /* para não aparecer as outras imagens */
+    position: absolute;
+    top: calc(40% + 50px);
+    left: 50%;
+    padding: auto;
+    transform: translate(-50%, -50%);
+    box-shadow: 15px 10px 15px 6px rgba(19, 20, 20, 0.473);
+}
+
+.content .slide img{
+    height: 100%;
+    width: 110%;
+    object-fit: cover;
+    transition: transform 0.4s ease-in-out;
+}
+
+.navigation{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.nav {
+    height: 14px;
+    width: 15px;
+    border-radius: 50%;
+    margin:0 6px;
+    cursor: pointer;
+    transform: 0.5s ease;
+}
+
+.nav:hover{
+    background-color: #e9e2e2;
+}
+
+input{
+    display: none;
+}
+
+.slides{
+    display: flex;
+    width: 1000%;
+    height: 100%;
+}
+
+.slide{
+    width: 10%; /* 100/10 = 10 */
+    transition: transform 0.5s ease-in-out;
+}
+
+#s1:checked ~ .sl{
+margin-left: 0;
+}
+
+#s2:checked ~ .sl{
+margin-left: -10%;
+}
+
+#s3:checked ~ .sl{
+margin-left: -20%;
+}
+
+#s4:checked ~ .sl{
+margin-left: -30%;
+}
+
+#s5:checked ~ .sl{
+margin-left: -40%;
+}
+
+#s6:checked ~ .sl{
+margin-left: -50%;
+}
+
+#s7:checked ~ .sl{
+margin-left: -60%;
+}
+
+#s8:checked ~ .sl{
+margin-left: -70%;
+}
+
+#s9:checked ~ .sl{
+margin-left: -80%;
+}
+
+#s10:checked ~ .sl{
+margin-left: -90%;
+}
+
+.botao{
+    position: relative;
+    right: 40%;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #5d5c7e;
+    bottom: 10px;
+    height: 36px;
+    width: 100px;                
+    background-color: #e9e2e2;
+    border: 2px solid #838180;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.5s ease-in-out;
+}
+
+.botao:hover{
+    background-color: #fcc2a5;
+}
+
+
+
+
+
+
+
+
